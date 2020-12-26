@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Services;
+
+use Throwable;
+use App\Models\GenericModel;
+use App\Services\LogService;
+
+class GenericService extends Seeder
+{
+    public function method()
+    {
+        try {
+            //code...
+        } catch (Throwable $throwable) {
+            LogService::log($th);
+        }
+    }
+}
